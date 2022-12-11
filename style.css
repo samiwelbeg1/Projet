@@ -11,7 +11,7 @@ body{
 nav{
     display:flex;
     flex-wrap:wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     border-bottom: 5px solid #6f6f6f;
 }
@@ -115,3 +115,48 @@ footer #contact{
     color: rgb(181, 181, 181);
 }
 
+.el{
+    display: none;
+    font-size: 2rem;
+}
+
+.pi{
+    display: none;
+}
+
+@media screen and (max-width: 771px) {
+    .el{
+        display: block;
+        font-size: 2rem;
+    }
+
+    .onglets{
+        position: fixed;
+        top: 0;
+        left: -200%;
+        width: 100vw;
+        height: 100vh;
+        background-color: #000;
+        z-index: 999;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        padding:  0 3rem ;
+        margin-top: 2rem;
+        transition: .4s;
+    }
+    nav .onglets a{
+        color: #fff;
+        margin-top: 2rem;
+    }
+
+    .pi{
+        color: #fff;
+        display: block;
+    }
+}
+
+.act{
+    left: -0%;
+}

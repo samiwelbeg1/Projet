@@ -8,7 +8,6 @@ el.addEventListener('click', () =>{
 
 })
 
-
 pi.addEventListener('click', () =>{
     om.classList.remove('act')
     
